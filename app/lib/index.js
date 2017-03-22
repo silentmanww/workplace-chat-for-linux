@@ -20,7 +20,7 @@ app.on('ready', () => {
     initialIcon,
 
     webPreferences: {
-      partition: 'persist:teams',
+      partition: 'persist:outlook365',
       preload: path.join(__dirname, 'notifications.js'),
       nodeIntegration: false
     }
