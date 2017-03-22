@@ -15,8 +15,8 @@ const app = electron.app;
 app.on('ready', () => {
   const initialIcon = path.join(app.getAppPath(), 'lib/assets/icons/icon-96x96.png');
   const window = new electron.BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1024,
+    height: 768,
     initialIcon,
 
     webPreferences: {
@@ -27,7 +27,7 @@ app.on('ready', () => {
   });
 
   tray = new Tray(initialIcon);
-  tray.setToolTip('Teams');
+  tray.setToolTip('Outlook 365');
   tray.on('click', () => {
     if (window.isFocused()) {
       window.hide();
@@ -85,5 +85,5 @@ app.on('ready', () => {
   });
 
   window.webContents.setUserAgent('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36');
-  window.loadURL('https://teams.microsoft.com/');
+  window.loadURL('https://outlook.office.com/');
 });

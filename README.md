@@ -1,6 +1,6 @@
-# teams-for-linux
+# outlook365-for-linux
 
-Unoficial Microsoft Teams client for Linux using [Electron](http://electron.atom.io/).
+Unofficial Microsoft Office 365 client for Linux using [Electron](http://electron.atom.io/).
 It uses the Web App and wrapps it as a standalone application using Electron.
 
 ## Install

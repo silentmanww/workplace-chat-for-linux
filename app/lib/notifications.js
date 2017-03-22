@@ -22,7 +22,7 @@
 
         ctx.font = 'bold 70px "Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif';
         if (count > 9) {
-          ctx.fillText('9+', 105, 60);
+          ctx.fillText('+', 105, 60);
         } else {
           ctx.fillText(count.toString(), 105, 60);
         }
@@ -40,18 +40,18 @@
 
 
   function poll(lastCount) {
-    if (typeof angular !== 'undefined') {
-      try {
-        let notifications = angular.element(document.documentElement).controller().pageTitleNotificationCount;
-        if (notifications !== lastCount) {
-          setOverlay(notifications);
-        }
-        setTimeout(poll, 1000, notifications);
-      } catch (err) {
-        setTimeout(poll, 1000, lastCount);
+    try {
+      var a = jQuery("span[title*='Inbox'] + div > span").first().text();
+      var b = jQuery(".o365cs-flexPane-unseenCount").text();
+      a = (a > 0 ? parseInt(a) : 0);
+      b = (b > 0 ? parseInt(b) : 0);
+      let notifications = a + b;
+      if (notifications !== lastCount) {
+        setOverlay(notifications);
       }
-    } else {
-      setTimeout(poll, 1000, 0);
+      setTimeout(poll, 1000, notifications);
+    } catch (err) {
+      setTimeout(poll, 1000, lastCount);
     }
   }
 
