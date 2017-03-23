@@ -5,7 +5,7 @@ It uses the Web App and wrapps it as a standalone application using Electron.
 
 ## Install
 
-You can download the tarball, rpm, deb or pacman from the [releases page](https://github.com/ivelkov/teams-for-linux/releases).
+You can download the tarball, rpm, deb or pacman from the [releases page](https://github.com/jlheureux-globaleagle/outlook365-for-linux/releases).
 
 ## Run from source
 
