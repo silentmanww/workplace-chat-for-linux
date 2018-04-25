@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Facebook Workplace Chat
+Comment=Workplace Chat for Linux
+TryExec=workplace-chat
+Exec=workplace-chat
+Icon=workplace-chat
+Terminal=false
+Type=Application
+StartupNotify=true

@@ -1,11 +1,11 @@
-# outlook365-for-linux
+# workplacechat-for-linux
 
-Unofficial Microsoft Office 365 client for Linux using [Electron](http://electron.atom.io/).
+Unofficial Facebook Workspace Chat client for Linux using [Electron](http://electron.atom.io/).
 It uses the Web App and wrapps it as a standalone application using Electron.
 
 ## Install
 
-You can download the tarball, rpm, deb or pacman from the [releases page](https://github.com/jlheureux-globaleagle/outlook365-for-linux/releases).
+You can download the tarball, rpm, deb or pacman from the [releases page](https://github.com/goggot/workplacechat-for-linux/releases).
 
 ## Run from source
 

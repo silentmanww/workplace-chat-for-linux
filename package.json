@@ -1,17 +1,21 @@
 {
-  "name": "outlook365-for-linux",
+  "name": "workplacechat-for-linux",
   "version": "0.0.1",
-  "description": "Unofficial client for Microsoft Outlook 365 for Linux",
-  "homepage": "https://github.com/jlheureux-globaleagle/outlook365-for-linux",
+  "description": "Unofficial client for Facebook Workspace Chat for Linux",
+  "homepage": "https://github.com/Goggot/workplacechat-for-linux",
   "keywords": [
-    "365",
-    "Outlook",
-    "Outlook 365",
-    "Microsoft Outlook 365"
+    "workplace",
+    "facebook workplace",
+    "workspace linux",
+    "facebook workplace linux",
+    "workspace chat",
+    "facebook workplace chat",
+    "workspace chat linux",
+    "facebook workplace chat linux"
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://github.com/jlheureux-globaleagle/outlook365-for-linux"
+    "url": "git+ssh://github.com/goggot/workplacechat-for-linux"
   },
   "author": "Ivelin Velkov <ivelin.velkov@gmail.com>",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -25,11 +29,11 @@
     "electron-builder": "^13.11.1"
   },
   "build": {
-    "appId": "outlook365-for-linux",
+    "appId": "workplacechat-for-linux",
     "asar": false,
     "linux": {
       "category": "Network",
-      "executableName": "outlook365",
+      "executableName": "workplacechat",
       "target": [
         "tar.gz",
         "deb",
