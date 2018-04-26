@@ -1,5 +1,5 @@
 {
-  "name": "workplacechat-for-linux",
+  "name": "workplace-chat-for-linux",
   "version": "0.0.1",
   "description": "Facebook Workspace Chat for Linux",
   "main": "lib/index.js",

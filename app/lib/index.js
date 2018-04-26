@@ -20,7 +20,7 @@ app.on('ready', () => {
     initialIcon,
 
     webPreferences: {
-      partition: 'persist:workplacechat',
+      partition: 'persist:workplace-chat',
       preload: path.join(__dirname, 'notifications.js'),
       nodeIntegration: false
     }

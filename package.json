@@ -1,8 +1,8 @@
 {
-  "name": "workplacechat-for-linux",
+  "name": "workplace-chat-for-linux",
   "version": "0.0.1",
   "description": "Unofficial client for Facebook Workspace Chat for Linux",
-  "homepage": "https://github.com/Goggot/workplacechat-for-linux",
+  "homepage": "https://github.com/Goggot/workplace-chat-for-linux",
   "keywords": [
     "workplace",
     "facebook workplace",
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://github.com/goggot/workplacechat-for-linux"
+    "url": "git+ssh://github.com/goggot/workplace-chat-for-linux"
   },
   "author": "Ivelin Velkov <ivelin.velkov@gmail.com>",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -29,11 +29,11 @@
     "electron-builder": "^13.11.1"
   },
   "build": {
-    "appId": "workplacechat-for-linux",
+    "appId": "workplace-chat-for-linux",
     "asar": false,
     "linux": {
       "category": "Network",
-      "executableName": "workplacechat",
+      "executableName": "workplace-chat",
       "target": [
         "tar.gz",
         "deb",
@@ -41,5 +41,7 @@
       ]
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "wmctrl": "0.0.3"
+  }
 }
