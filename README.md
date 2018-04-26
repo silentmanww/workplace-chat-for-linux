@@ -10,9 +10,7 @@ You can download the tarball, rpm, deb or pacman from the [releases page](https:
 ## Run from source
 
 ```bash
-$ cd app; npm install
-$ cd ..; npm install
-$ npm start
+$ ./install.sh
 ```
 
 ## License

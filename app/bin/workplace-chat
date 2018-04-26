@@ -1,18 +1,6 @@
 #!/bin/bash
 
-PIDFILE=/tmp/workplace-chatpid
 WORKDIR=/opt/workplace-chat
 
-if [[ ! -f $PIDFILE ]]; then
-  touch $PIDFILE
-fi
-
-OLDPID=$(cat $PIDFILE)
-ps -q $OLDPID -o comm=
-if [ $? = 0 ]; then
-  fg $OLDPID
-else
-  echo $$ >${PIDFILE}
-  cd $WORKDIR
-  npm start
-fi
+cd $WORKDIR
+npm start

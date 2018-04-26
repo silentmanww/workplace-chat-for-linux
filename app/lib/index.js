@@ -16,7 +16,7 @@ app.on('ready', () => {
   const initialIcon = path.join(app.getAppPath(), 'lib/assets/icons/icon-128x128.png');
   const window = new electron.BrowserWindow({
     width: 1024,
-    height: 768,
+    height: 680,
     initialIcon,
 
     webPreferences: {

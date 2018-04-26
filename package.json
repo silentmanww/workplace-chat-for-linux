@@ -35,9 +35,7 @@
       "category": "Network",
       "executableName": "workplace-chat",
       "target": [
-        "tar.gz",
-        "deb",
-        "pacman"
+        "tar.gz"
       ]
     }
   },
