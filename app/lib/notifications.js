@@ -49,7 +49,6 @@
     image.src = document.querySelector("link[rel*='icon']").href;
   }
 
-
   function poll(lastMailCount, lastJiraCount, lastNotifCount) {
     try {
       let mailCount = jQuery("span[title*='Inbox'] + div > span").first().text();
@@ -67,9 +66,11 @@
     }
   }
 
-
   document.addEventListener('DOMContentLoaded', function () {
     poll(0);
   });
+
+  // Disable Workplace icon (top left)
+  jQuery('._2z9u').attr("href", "#");
 
 })();

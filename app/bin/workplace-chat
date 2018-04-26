@@ -3,4 +3,5 @@
 WORKDIR=/opt/workplace-chat
 
 cd $WORKDIR
-npm start
+npm start &
+exit 0
