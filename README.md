@@ -5,8 +5,8 @@ It uses the Web App and wrapps it as a standalone application using Electron.
 
 ## Dependencies
 
-libgconf-2-4
-libcanberra-gtk-module
+- libgconf-2-4
+- libcanberra-gtk-module
 
 ## Install
 
