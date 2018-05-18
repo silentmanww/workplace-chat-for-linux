@@ -22,7 +22,7 @@ app.on('ready', () => {
     webPreferences: {
       partition: 'persist:workplace-chat',
       preload: path.join(__dirname, 'notifications.js'),
-      nodeIntegration: false
+      nodeIntegration: true
     }
   });
 
