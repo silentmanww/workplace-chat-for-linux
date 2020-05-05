@@ -1,8 +1,8 @@
 {
   "name": "workplace-chat",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Unofficial client for Facebook Workspace Chat for Linux",
-  "homepage": "https://github.com/silentmanww/workplace-chat-with-electron",
+  "homepage": "https://github.com/silentmanww/workplace-chat-for-linux",
   "keywords": [
     "workplace",
     "facebook workplace",
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://github.com/silentmanww/workplace-chat-with-electro"
+    "url": "git+ssh://github.com/silentmanww/workplace-chat-for-linux"
   },
   "author": "Angelo Theodorakis <silentmanww@gmail.com>",
   "license": "SEE LICENSE IN LICENSE.md",
