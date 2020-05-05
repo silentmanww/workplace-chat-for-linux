@@ -1,9 +1,11 @@
 [Desktop Entry]
-Name=Facebook Workplace Chat
+Name=Workplace Chat
 Comment=Workplace Chat for Linux
 TryExec=workplace-chat
 Exec=workplace-chat
-Icon=/opt/workplace-chat/app/lib/assets/icons/icon-128x128.png
+Icon=workchat
 Terminal=false
 Type=Application
 StartupNotify=true
+StartupWMClass=workplace-chat
+Categories=GNOME;GTK;Utility;Internet

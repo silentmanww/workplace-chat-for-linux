@@ -17,8 +17,7 @@ app.on('ready', () => {
   const window = new electron.BrowserWindow({
     width: 980,
     height: 685,
-    initialIcon,
-
+    icon:"/usr/share/icons/workchat.png",
     webPreferences: {
       partition: 'persist:workplace-chat',
       //preload: path.join(__dirname, 'notifications.js'),
@@ -84,6 +83,6 @@ app.on('ready', () => {
     });
   });
 
-  window.webContents.setUserAgent('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36');
+  window.webContents.setUserAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Workplace/1.0.76 Chrome/69.0.3497.128 Electron/4.2.8 Safari/537.36 [FBAN/WorkplaceDesktop;FBAV/1.0.76;FBDV/darwin;FBSV/19.0.0]');
   window.loadURL('https://work.facebook.com/chat/');
 });

@@ -23,4 +23,5 @@ npm install
 sudo cp -r ${WORKDIR}/${APPNAME} $INSTALLDIR
 sudo install -m 755 ${INSTALLDIR}/${APPNAME}/app/bin/${APPNAME} /usr/local/bin/
 install -m 755 ${INSTALLDIR}/${APPNAME}/app/bin/workplace-chat.desktop ~/.local/share/applications
-install -m 755 ${INSTALLDIR}/${APPNAME}/app/bin/workplace-chat.desktop ~/Desktop
+sudo rm -rf ${INSTALLDIR}/${APPNAME}/app/bin
+sudo cp ${INSTALLDIR}/${APPNAME}/app/lib/assets/icons/workchat.png /usr/share/icons
