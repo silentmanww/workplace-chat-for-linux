@@ -19,6 +19,6 @@ $ ./install.sh
 
 GPLv3
 
-## Credit
+## Credits
 
 Forked from https://github.com/Goggot/workplace-chat-for-linux
