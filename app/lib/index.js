@@ -63,7 +63,7 @@ app.on('ready', () => {
       app.quit();
     }
   });
-
+	
   electron.ipcMain.on('notifications', (event, {count, icon}) => {
     try {
       const image = nativeImage.createFromDataURL(icon);
@@ -74,15 +74,6 @@ app.on('ready', () => {
     }
   });
 
-  window.webContents.on('new-window', (event, url) => {
-    event.preventDefault();
-    open(url, (err) => {
-      if (err) {
-        console.error(`exec error: ${err.message}`);
-      }
-    });
-  });
-
   window.webContents.setUserAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Workplace/1.0.76 Chrome/69.0.3497.128 Electron/4.2.8 Safari/537.36 [FBAN/WorkplaceDesktop;FBAV/1.0.76;FBDV/darwin;FBSV/19.0.0]');
-  window.loadURL('https://work.facebook.com/chat/');
+  window.loadURL('https://work.facebook.com/chat/');  
 });
